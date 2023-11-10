@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        #more {display: none;}
+
+        body{
+        background-image: url(../static/Home\ page\ img.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    h1{
+        color: white;
+        font-size: 50px;
+    }
+    button{
+        background-color: blue;
+        height: 30px;
+        border-radius: 3px;
+    }
+    p{
+        font-size: 25px;
+        color: white;
+    }
+  
+    </style>
+</head>
+<body>
+    <h1>About</h1>
+<p>A full stack web development roadmap is a plan that outlines the skills and knowledge that you need to develop in order to become a full stack web developer. A full stack web developer is someone who is able to work on both the front-end and back-end aspects of web development. This includes the user interface and user experience (front-end), as well as the server, database, and server-side logic (back-end).<span id="dots">..</span><span id="more"><br>Here is a general full stack web development roadmap:<br>
+  1. Learn the fundamentals of web development. This includes HTML, CSS, and JavaScript. These are the core languages that are used to build web pages and applications.<br>
+  2. Master front-end development. This includes learning a front-end framework such as React, Angular, or Vue. These frameworks make it easier to build complex and interactive user interfaces.<br>
+  3. Gain proficiency in back-end development. This includes learning a server-side programming language such as Python, Node.js, or Ruby. You should also learn about databases and how to use them to store and retrieve data.<br>
+  4. Understand API development and integration. APIs allow different applications to communicate with each other. It is important to understand how to develop and consume APIs in order to build modern web applications.<br>
+  5. Familiarize yourself with version control systems. Version control systems such as Git allow you to track changes to your code and collaborate with other developers.<br>
+  6. Gain knowledge of deployment and DevOps practices. Deployment is the process of making your code available to users. DevOps is a set of practices that helps you to automate and streamline your development and deployment workflow.<br>
+  7. Learn testing and quality assurance. Testing is the process of ensuring that your code is working as expected. Quality assurance is the process of preventing bugs from being introduced into your code.<br>
+  8. Understand CI/CD pipelines. CI/CD pipelines are a set of automated steps that help you to build, test, and deploy your code quickly and reliably.<br>
+  9. Stay updated with the latest technologies and trends. The web development field is constantly evolving, so it is important to stay up-to-date with the latest technologies and trends.<br></span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+
+</body>
+</html>

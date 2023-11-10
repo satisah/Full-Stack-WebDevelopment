@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Web deveoloment Road Map</title>
+    {% load static %}
+</head>
+<body>
+    <div class="slider owl-carousel">
+        <div class="card">
+           <div class="img">
+              <img src="../static/Front-end.jpg" alt="">
+           </div>
+           <div class="content">
+              <div class="title">
+                 1.Front-end Languages
+              </div>
+              <p>
+                 The best front-end language for you will depend on your specific needs and preferences. If you are new to front-end development, I recommend starting with HTML and CSS.
+              </p>
+              <div class="btn">
+                 <button><a href="{% url 'Front end' %}">Read more</a></button>
+              </div>
+           </div>
+        </div>
+        <div class="card">
+           <div class="img">
+              <img src="../static/Back-end.jpg" alt="">
+           </div>
+           <div class="content">
+              <div class="title">
+                  2.Back-end Languages
+              </div>
+              <p>
+                 The best back-end language for you will depend on your specific needs and preferences. If you are new to back-end development, I recommend starting with JavaScript.
+              </p>
+              <div class="btn">
+                 <button><a href="{% url 'Back end' %}">Read more</a></button>
+              </div>
+           </div>
+        </div>
+        <div class="card">
+           <div class="img">
+              <img src="../static/Database.jpg" alt="">
+           </div>
+           <div class="content">
+              <div class="title">
+                 3.Database Languages
+              </div>
+              <p>
+                  The best database programming language for you will depend on your specific needs and preferences. If you are new to database programming, I recommend starting with SQL. 
+              </p>
+              <div class="btn">
+                 <button><a href="{% url 'Database' %}">Read more</a></button>
+              </div>
+           </div>
+        </div>
+     </div>
+
+
+     <!-- Style -->
+     
+<style>
+
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #f2f2f2;
+  position:relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../static/Home\ page\ img.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slider{
+  max-width: 1100px;
+  display: flex;
+ }
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  color: white;
+  border: 3px solid white;
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: blue;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+.btn button a{
+  text-decoration: none;
+  color: white;
+}
+
+</style>
+
+
+     <script>
+        $(".slider").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000, //2000ms = 2s;
+          autoplayHoverPause: true,
+        });
+     </script>
+</body>
+</html>

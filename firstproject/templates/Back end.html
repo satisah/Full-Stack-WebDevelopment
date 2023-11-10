@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back end</title>
+    
+</head>
+<body>
+    
+<div class="container">
+
+    <h1 class="heading">Back-end Languages</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="../static/Python img.webp" alt="">
+            <h3>PYTHON</h3>
+            <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+            <a href="https://youtu.be/_uQrJ0TkZlc?si=Zk59AHAIyV6w_e8I" class="btn">learn more</a>
+        </div>
+
+        <div class="box">
+            <img src="../static/Java Script.png" alt="">
+            <h3>Java Script</h3>
+            <p>JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. </p>
+            <a href="https://youtu.be/SBmSRK3feww?si=Ti2qFHVBJ5nxEp4u" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../static/Node js.webp" alt="">
+            <h3>Node JS</h3>
+            <p>Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more.Node.js is a back-end JavaScript runtime environment</p>
+            <a href="https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../static/Django.png" alt="">
+            <h3>Django</h3>
+            <p>Django is a free and open-source, Python-based web framework that follows the model–template–views architectural pattern.</p>
+            <a href="https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../static/Spring.png" alt="">
+            <h3>Spring</h3>
+            <p>The Spring Framework is an application framework and inversion of control container for the Java platform. </p>
+            <a href="https://www.youtube.com/watch?v=r2Q0Jzl2qMQ&list=PL3NrzZBjk6m-nYX072dSaGfyCJ59Q5TEi" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../static/Asp.net.jpeg" alt="">
+            <h3>ASP.NET</h3>
+            <p>ASP.NET is an open-source, server-side web-application framework designed for web development to produce dynamic web pages. </p>
+            <a href="https://www.youtube.com/watch?v=nelyq4LD-KY&pp=ygUWQVNQLk5FVCAgZnVsbCB0dXRyaWFscw%3D%3D" class="btn">read more</a>
+        </div>
+    </div>
+</div>
+
+    <!-- custom css file link  -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.container{
+    background:linear-gradient(45deg, rgb(51, 16, 205), rgb(58, 60, 164));
+    padding:15px 9%;
+    padding-bottom: 100px;
+    background-image: url(../static/Home\ page\ img.jpg);
+    background-size: cover;
+}
+
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.container .box-container .box img{
+    height: 80px;
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+</style>
+
+</body>
+</html>
